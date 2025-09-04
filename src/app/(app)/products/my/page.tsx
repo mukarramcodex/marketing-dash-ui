@@ -72,7 +72,7 @@ export default function MyProductsPage() {
                 <p className="text-xl font-semibold text-primary">${product.price.toFixed(2)}</p>
                 <p className="text-sm text-green-600 dark:text-green-400">Commission: {product.commission}</p>
                 <div className="flex items-center gap-2 pt-2">
-                  <Input type="text" readOnly value={product.uniqueLink} className="text-xs h-8" />
+                  <input type="text" readOnly value={product.uniqueLink} className="text-xs h-8" />
                   <Button variant="outline" size="icon" className="h-8 w-8" onClick={() => handleCopyLink(product.uniqueLink)} aria-label="Copy link">
                     <Link2 className="h-4 w-4" />
                   </Button>
