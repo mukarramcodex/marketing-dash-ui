@@ -45,11 +45,11 @@ export default function SettingsPage() {
     resolver: zodResolver(profileSchema),
     // Mock initial data - in a real app, this would come from user state/API
     defaultValues: {
-      firstName: "Johnathan",
-      lastName: "Doe",
-      email: "john.doe@example.com",
-      phoneNumber: "555-0101",
-      username: "john_doe_123",
+      firstName: "Mukarram",
+      lastName: "Ali",
+      email: "site@mukarramali.dev",
+      phoneNumber: "+92-332-5989669",
+      username: "developer_fullstack",
     },
   });
 
@@ -59,18 +59,18 @@ export default function SettingsPage() {
 
   const onProfileSubmit = (data: ProfileFormData) => {
     console.log("Profile update data:", data);
-    toast({ title: "Profile Updated (UI Only)", description: "Your profile changes have been logged." });
+    toast({ title: "Profile Updated", description: "Your profile changes have been logged." });
   };
 
   const onPasswordSubmit = (data: PasswordFormData) => {
     console.log("Password change data:", data);
-    toast({ title: "Password Changed (UI Only)", description: "Your password change has been logged." });
+    toast({ title: "Password Changed", description: "Your password change has been logged." });
     passwordForm.reset({currentPassword: "", newPassword: "", confirmNewPassword: ""});
   };
 
   const handleNotificationToggle = (key: keyof typeof notificationsEnabled) => {
     setNotificationsEnabled(prev => ({...prev, [key]: !prev[key]}));
-    toast({ title: "Notification Settings Updated (UI Only)" });
+    toast({ title: "Notification Settings Updated" });
   };
 
   return (
