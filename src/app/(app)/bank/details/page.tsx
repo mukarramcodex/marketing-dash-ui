@@ -34,7 +34,7 @@ export default function MyBankDetailsPage() {
   const handleEdit = (id: string) => {
     // UI only - In a real app, this would navigate to an edit form or open a modal
     toast({
-      title: "Edit Bank Details (UI Only)",
+      title: "Edit Bank Details",
       description: `Editing details for account ID: ${id}. (Not implemented)`,
     });
   };
@@ -43,7 +43,7 @@ export default function MyBankDetailsPage() {
     // UI only
     setBankAccounts(prev => prev.filter(acc => acc.id !== id));
     toast({
-      title: "Bank Details Deleted (UI Only)",
+      title: "Bank Details Deleted",
       description: `Account ID: ${id} has been removed from the list.`,
     });
   };
@@ -54,7 +54,7 @@ export default function MyBankDetailsPage() {
       prev.map(acc => ({ ...acc, isPrimary: acc.id === id }))
     );
     toast({
-      title: "Primary Account Updated (UI Only)",
+      title: "Primary Account Updated",
       description: `Account ID: ${id} is now set as primary.`,
     });
   };
