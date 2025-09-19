@@ -11,7 +11,7 @@ import Image from "next/image";
 export default function MyAffiliateLinkPage() {
   const { toast } = useToast();
   // This would typically come from user data
-  const uniqueAffiliateId = "john_doe_123"; 
+  const uniqueAffiliateId = "mukarramali_9669"; 
   const baseAffiliateUrl = `https://promillion.marketing/ref/${uniqueAffiliateId}`;
 
   const [affiliateLink, setAffiliateLink] = React.useState(baseAffiliateUrl);
