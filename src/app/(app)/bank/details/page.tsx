@@ -11,18 +11,18 @@ import * as React from "react";
 const mockBankDetails = [
   {
     id: "bd001",
-    bankName: "Global Union Bank",
-    accountHolderName: "Johnathan M. Doe",
-    accountNumberLast4: "XXXX-6789",
-    currency: "USD",
+    bankName: "Meezan Bank LTD.",
+    accountHolderName: "Muhammad Mukarram Ali",
+    accountNumberLast4: "XXXX-3832",
+    currency: "PKR",
     isPrimary: true,
   },
   {
     id: "bd002",
-    bankName: "Euro Trust Alliance",
-    accountHolderName: "Johnathan M. Doe",
-    accountNumberLast4: "XXXX-1234",
-    currency: "EUR",
+    bankName: "Easy Paisa Digital Bank",
+    accountHolderName: "Muhammad Mukarram Ali",
+    accountNumberLast4: "XXXX-9669",
+    currency: "PKR",
     isPrimary: false,
   },
 ];
